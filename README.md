@@ -69,6 +69,15 @@ Add to your MCP settings:
 - **State-Modifying Tools**: Require user confirmation before execution
 - **Multi-Step Workflows**: Chain tools for complex tasks
 
+## Badge
+
+[![MCP Server](https://img.shields.io/badge/MCP%20Server-Ready-blue)](https://modelcontextprotocol.io)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue)](https://www.typescriptlang.org)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ## License
 
 MIT
