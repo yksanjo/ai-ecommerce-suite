@@ -1,83 +1,84 @@
-# AI E-commerce Suite 🛒🤖
+# ai-ecommerce-suite
 
-A collection of AI-powered e-commerce and transaction tools using the Model Context Protocol (MCP).
+## Detailed Description
 
-## Projects Included
+ai-ecommerce-suite is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-### 1. Shopping Sites
-AI-powered shopping that searches products, adds to cart, compares items, applies discounts, and completes checkout.
+## Problem Statement
 
-**Tools:**
-- `search_products` - Search products by keyword or category
-- `add_to_cart` - Add products to shopping cart
-- `compare_products` - Compare product features and prices
-- `apply_discount` - Find and apply discount codes
-- `checkout` - Complete the purchase
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-### 2. Booking Systems
-AI-powered booking that checks availability, makes reservations, and modifies bookings.
+## Solution Overview
 
-**Tools:**
-- `check_availability` - Check availability for dates/services
-- `create_booking` - Make a new reservation
-- `modify_booking` - Change existing reservation details
-- `cancel_booking` - Cancel a booking
-- `list_bookings` - View all bookings
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### 3. Banking/Finance
-AI-powered finance management that categorizes transactions, creates budgets, and generates reports.
+## Key Features
 
-**Tools:**
-- `categorize_transaction` - Auto-categorize transactions
-- `create_budget` - Set up budget categories
-- `generate_report` - Create financial reports
-- `list_transactions` - View transaction history
-- `get_spending_insights` - Analyze spending patterns
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
 
 ## Getting Started
 
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
 ```bash
-# Clone the repository
-git clone https://github.com/yksanjo/ai-ecommerce-suite.git
-
-# Install dependencies
-cd ai-ecommerce-suite
-npm install
-
-# Run the MCP server
-npm start
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
-## MCP Server Configuration
+## Usage
 
-Add to your MCP settings:
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```json
-{
-  "mcpServers": {
-    "ai-ecommerce-suite": {
-      "command": "node",
-      "args": ["/path/to/ai-ecommerce-suite/dist/server.js"]
-    }
-  }
-}
-```
+## Quality Standards
 
-## Architecture
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-- **Read-Only Tools**: Use `readOnlyHint: true` for search/query operations
-- **State-Modifying Tools**: Require user confirmation before execution
-- **Multi-Step Workflows**: Chain tools for complex tasks
+## Security
 
-## Badge
-
-[![MCP Server](https://img.shields.io/badge/MCP%20Server-Ready-blue)](https://modelcontextprotocol.io)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-blue)](https://www.typescriptlang.org)
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
